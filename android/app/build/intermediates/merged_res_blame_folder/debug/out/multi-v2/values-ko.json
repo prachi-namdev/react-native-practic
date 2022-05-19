@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/prachin/Documents/react_demo/MovieApp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
+            "outputFile": "/home/prachin/Documents/react_demo/RNmovieApp/react-nativeMovieApp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "/home/prachin/.gradle/caches/transforms-3/f8cfdef18edf0f0dc80f7630fe54d7fb/transformed/core-1.6.0/res/values-ko/values-ko.xml",

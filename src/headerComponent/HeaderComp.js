@@ -1,7 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import React, {Component} from 'react';
 import {View,Text, TouchableOpacity} from 'react-native';
-import styles from '../component/HomeScreen/styles';
+import styles from './styles';
 
 const HeaderComp = ({
     goBack = () => { },
@@ -9,7 +9,8 @@ const HeaderComp = ({
 }) => {
     const navigation = useNavigation
     return (
-      <View>
+      <View style={styles.container}>
+          
           {!!goBack ? <TouchableOpacity 
           onPress={!!goBack ? goBack : () => navigation.goBack()}>
               <Text></Text> 

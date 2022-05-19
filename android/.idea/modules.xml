@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MovieApp.iml" filepath="$PROJECT_DIR$/.idea/modules/MovieApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MovieApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MovieApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-174709666/MovieApp.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-174709666/MovieApp.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/501528318/MovieApp.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/501528318/MovieApp.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/259104071/MovieApp.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/259104071/MovieApp.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2094228961/MovieApp.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-2094228961/MovieApp.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1920430671/react-native-gradle-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/-1920430671/react-native-gradle-plugin.iml" />
+    </modules>
+  </component>
+</project>

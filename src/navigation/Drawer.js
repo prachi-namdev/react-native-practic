@@ -3,7 +3,8 @@ import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import TabRoutes from './TabRoutes';
-import { Login,Profile } from '../component';
+import { Login, Profile } from '../component';
+import HeaderComp from '../headerComponent/HeaderComp';
 
 
 function Feed() {
@@ -28,7 +29,12 @@ const Drawer = createDrawerNavigator();
 
 function MyDrawer() {
   return (
-    <Drawer.Navigator useLegacyImplementation initialRouteName="Feed">
+    <Drawer.Navigator 
+      drawerContentOptions={{activeTintColor:'red'}} 
+     useLegacyImplementation
+      initialRouteName="Feed"
+      
+    >
       <Drawer.Screen
         name="Home"
         component={TabRoutes}
@@ -44,7 +50,7 @@ function MyDrawer() {
         component={Login}
         options={{ drawerLabel: 'Login' }}
       />
-      
+
     </Drawer.Navigator>
   );
 }
@@ -52,7 +58,7 @@ function MyDrawer() {
 export default function App() {
   return (
     // <NavigationContainer>
-      <MyDrawer />
+    <MyDrawer />
     // </NavigationContainer>
   );
 }

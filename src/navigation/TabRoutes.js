@@ -14,7 +14,7 @@ function TabRoutes(){
     <Tab.Navigator 
     screenOptions={{headerShown: false, 
         tabBarStyle:{
-            // backgroundColor:'skyblue',
+            backgroundColor:'#E72F49',
             // borderRadius:20,
             position:'absolute',
             // bottom:10,
@@ -27,8 +27,8 @@ function TabRoutes(){
      tabBarIcon:({focused}) =>{
        return(
              <Image source={imagePath.icHome} 
-             style={{tintColor:focused ? 'blue' : 'black',
-             height:25,width:25}}
+             style={{tintColor:focused ? 'black' : 'black',
+             height:30,width:30}}
              />
        )
      }
@@ -38,8 +38,8 @@ function TabRoutes(){
      options={{title:"DETAIL",tabBarIcon:({focused}) =>{
        return(
          <Image source={imagePath.icDetail} 
-         style={{tintColor:focused?'blue':'black',
-          height:25,width:25}}
+         style={{tintColor:focused?'black':'black',
+          height:30,width:30}}
           />
        )
      }}} 

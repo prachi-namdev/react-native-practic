@@ -5,6 +5,8 @@ import { HomeScreen,DetailScreen } from '../component/index';
 import navigationString from '../constants/navigationString';
 import TabRoutes from './TabRoutes';
 import DrawerNavigation from './Drawer';
+import {Appbar} from 'react-native-paper';
+
 const Stack = createNativeStackNavigator();
 
 
@@ -12,10 +14,30 @@ export default function StackNavigation(){
   return(
    <NavigationContainer>
     <Stack.Navigator 
-     screenOptions={{headerShown: false}}
+     screenOptions={{headerShown: false }}
       initialRouteName={navigationString.HomeScreen}>
         <Stack.Screen 
-          options={{title:"home"}} name={navigationString.HomeScreen} 
+          options={{title:"home",
+          headerStyle:{
+            backgroundColor: "black",
+          },
+          headerTintColor: "black",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            color: "black"
+          },
+          headerLeft: () => (
+            <Appbar.Action
+              icon='menu'
+              color='black'
+              size={24}
+              style={{ marginLeft: 10 }}
+              onPress={() =>
+                navigation.dispatch(DrawerActions.toggleDrawer())
+              }
+            />
+          ),
+        }} name={navigationString.HomeScreen} 
           component={DrawerNavigation} />
         <Stack.Screen 
           options={{title:"Details"}} name={navigationString.DetailScreen} 
